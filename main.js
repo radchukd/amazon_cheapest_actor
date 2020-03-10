@@ -6,10 +6,9 @@ Apify.main(async () => {
     const { defaultDatasetId } = input.resource;
     const url = `https://api.apify.com/v2/datasets/${defaultDatasetId}/items`;
     const { body } = await httpRequest({ url, json: true });
-    const { items } = body[0];
     const map = new Map();
 
-    items.forEach((item) => {
+    body.forEach((item) => {
         const key = item.itemUrl;
         if (map.has(key)) {
             const { offer } = map.get(key);
