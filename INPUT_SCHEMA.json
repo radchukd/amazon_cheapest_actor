@@ -6,27 +6,32 @@
     "userId": {
       "title": "UserId",
       "description": "Id of user who initiated actor",
-      "type": "string"
+      "type": "string",
+      "editor": "json"
     },
     "createdAt": {
       "title": "createdAt",
       "description": "Time of webhook creation",
-      "type": "string"
+      "type": "string",
+      "editor": "json"
     },
     "eventType": {
       "title": "eventType",
       "description": "Event that envoked webhook",
-      "type": "string"
+      "type": "string",
+      "editor": "json"
     },
     "eventData": {
       "title": "eventData",
       "description": "Id of actor and its run",
-      "type": "object"
+      "type": "object",
+      "editor": "json"
     },
     "resource": {
       "title": "resource",
       "description": "Resource object for webhook",
-      "type": "object"
+      "type": "object",
+      "editor": "json"
     }
   },
   "required": []
