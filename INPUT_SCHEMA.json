@@ -1,0 +1,33 @@
+{
+  "title": "Input schema for the amazon-chepest-actor.",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "userId": {
+      "title": "UserId",
+      "description": "Id of user who initiated actor",
+      "type": "string"
+    },
+    "createdAt": {
+      "title": "createdAt",
+      "description": "Time of webhook creation",
+      "type": "string"
+    },
+    "eventType": {
+      "title": "eventType",
+      "description": "Event that envoked webhook",
+      "type": "string"
+    },
+    "eventData": {
+      "title": "eventData",
+      "description": "Id of actor and its run",
+      "type": "object"
+    },
+    "resource": {
+      "title": "resource",
+      "description": "Resource object for webhook",
+      "type": "object"
+    }
+  },
+  "required": []
+}
