@@ -25,7 +25,5 @@ Apify.main(async () => {
         filtered.push(value);
     });
 
-    await Apify.pushData({
-        items: filtered,
-    });
+    await Apify.pushData(filtered);
 });
